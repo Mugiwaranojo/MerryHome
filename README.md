@@ -40,17 +40,17 @@ L'architecture du projet permet d'ajouter un certain nombre de module qui seront
 }
 ```
 
-Voici une liste d'autre plugin à télécharger et à installer :
-- Plugin Zwave  : permet le contrôle de module zwave.
-- Plugin IPTV   : contrôle de la télévision à travers une liste de chaîne dans un fichier m3u.
-- Plugin PionnerVSX : permet le contrôle d'ampli pionner vsx.
-- Plugin Sensors : récupere les données de capteur de température, de présence et d'une cellule photovoltaïque.
+Voici une liste d'autres plugins à télécharger et à installer :
+- [Plugin Zwave](https://github.com/Mugiwaranojo/PluginZwave) : permet le contrôle de module zwave.
+- [Plugin IPTV](https://github.com/Mugiwaranojo/PluginIPTV) : contrôle de la télévision à travers une liste de chaîne dans un fichier m3u.
+- [Plugin PionnerVSX](https://github.com/Mugiwaranojo/PluginPionnerVSX) : permet le contrôle d'ampli pionner vsx.
+- [Plugin Sensors](https://github.com/Mugiwaranojo/PluginSensors) : récupere les données de capteur de température, de présence et d'une cellule photovoltaïque.
 - Plugin RemoteIR: permet de configurer une télécommande infrarouge que le serveur pourra remplacer.
 - Plugin Youtube : permet de récuper ses playlists youtube et transmettre les vidéo sur le serveur.
 - Plugin Wakeup  : configuration d'action liés aux autres plugins pour éffectuer un réveil matin.
 
 
-## Exection
+## Exécution
 
 Pour éxécuter le serveur et le client react il suffit de taper dans les répertoires correspondants la commande `npm start`.
 Pour le client react-native, il faut éxécuter la commande `react-native run-android`.
