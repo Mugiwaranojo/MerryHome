@@ -1,0 +1,11 @@
+.mediaItem {
+    color: purple;
+    width: 85px;
+    height: 85px;
+    white-space: pre-wrap;
+}
+
+.mediaItem .glyphicon  {
+    float: right;
+    margin-top: -20px;
+}

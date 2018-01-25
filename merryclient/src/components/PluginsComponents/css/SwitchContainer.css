@@ -1,0 +1,8 @@
+.btn-group{
+    display: block;
+    text-align: left;
+}
+
+.btn-group label {
+    padding: 5px 10px;
+}

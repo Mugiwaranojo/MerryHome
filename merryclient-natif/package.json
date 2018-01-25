@@ -1,0 +1,38 @@
+{
+  "name": "merryhomeapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "core-js": "^2.5.3",
+    "crypto": "^1.0.1",
+    "jwt-decode": "^2.2.0",
+    "native-base": "^2.3.6",
+    "pcre-to-regexp": "0.0.4",
+    "react": "16.2.0",
+    "react-native": "0.52.0",
+    "react-native-android-speech": "0.0.6",
+    "react-native-android-voice": "^0.6.0",
+    "react-native-auth0": "^1.2.1",
+    "react-native-jwt": "^1.0.0",
+    "react-native-jwt-io": "^1.0.3",
+    "react-native-randombytes": "^3.0.0",
+    "react-native-side-menu": "^1.1.3",
+    "react-native-vector-icons": "^4.5.0",
+    "socket.io-client": "^2.0.4",
+    "stream": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-jest": "22.0.4",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.0.4",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

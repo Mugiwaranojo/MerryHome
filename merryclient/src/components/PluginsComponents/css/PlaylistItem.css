@@ -1,0 +1,45 @@
+.youtube_playlists{
+    white-space:nowrap;
+    overflow: auto;
+}
+
+.PlaylistItem span{
+    overflow: hidden;
+    width: 115px;
+    display: block;
+}
+
+.PlaylistItem image{
+   float: left;
+}
+
+.youtube_playlist_content {
+    display: block;
+    overflow: auto;
+    max-height: 320px;
+}
+
+.PlaylistVideoItem{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.PlaylistVideoItem span{
+    padding-left: 10px;
+    display: inline-block;
+    width: 80%;
+    overflow: hidden;
+}
+
+.PlaylistVideoItem img{
+    width: 120px;
+    height: 90px;
+}
+
+
+#video-controls {
+    position: fixed;
+    float: right;
+    right: 28px;
+}

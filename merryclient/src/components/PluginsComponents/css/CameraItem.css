@@ -1,0 +1,24 @@
+.CameraItem {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.CameraItem img{
+    width: 320px;
+    height: 240px;
+    border-radius: 12px;
+    border: 1px solid slategray;
+}
+
+.CameraItem button{
+    position: absolute;
+    margin-left: -40px;
+    background: transparent;
+    border: none;
+    color: blue;
+}
+
+.CameraItem button:hover{
+    background: transparent;
+    color: green;
+}

@@ -1,0 +1,16 @@
+.InputItemButton {
+    margin: 3px;
+    color: white;
+    background: cadetblue;
+}
+
+.InputItemRange input {
+    width: 80%;
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+.InputItemRange span{
+    position: absolute;
+    padding: 10px;
+}

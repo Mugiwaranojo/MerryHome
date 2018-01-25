@@ -1,0 +1,55 @@
+.chat
+{
+    overflow: auto;
+    overflow-x: none;
+    height: 400px;
+    margin: 5px auto;
+}
+
+.chat > div > div
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat div.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat div.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat div .chat-body p
+{
+    margin: 0;
+    margin-top: 15px;
+    color: #777777;
+}
+
+.chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}

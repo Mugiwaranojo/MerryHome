@@ -1,0 +1,32 @@
+.SensorItem{
+    display: inline-block;
+    padding-top: 20px;
+    margin: 10px;
+    color: white;
+    min-width: 100px;
+    min-height: 100px;
+    background: #606;
+    border-radius: 10px;
+}
+.SensorItem div span{
+    padding:4px;
+    display: inline-block;
+}
+
+.photoresistance{
+    background: yellow;
+    padding-top: 50px;
+}
+
+.photoresistance_0{
+    background: black;
+}
+
+.presence{
+    background: #b5d592;
+    padding-top: 50px;
+}
+
+.presence_1{
+    background: red;
+}

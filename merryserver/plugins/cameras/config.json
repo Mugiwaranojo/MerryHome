@@ -1,0 +1,10 @@
+{
+	"cameras":[
+			 {"path": "url of your cameras",
+			  "port": 5010,
+			  "name": "name of camera"},
+			 {"path": "or you can choose video interface (0, 1, etc ...)",
+			  "port": 5020,
+			  "name": "name of camera"}
+			 ]
+}

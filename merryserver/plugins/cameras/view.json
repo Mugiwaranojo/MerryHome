@@ -1,0 +1,7 @@
+{
+	"link": "Cameras",
+	"linkicon": "camera",
+	"type": "List",
+	"itemType": "CameraItem",
+	"list": [] 
+}
