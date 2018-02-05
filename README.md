@@ -63,3 +63,6 @@ Pour le client react-native, il faut éxécuter la commande `react-native run-an
 
 # Architecture Client
 <img src="https://github.com/Mugiwaranojo/MerryHome/blob/master/ArchitectureClient.png">
+
+
+[Cours C](https://docs.google.com/presentation/d/1hIUoioWrZuOuvO_0Qe7ryl1Y56559geM77eAcSUi9QY/edit?usp=sharing)
