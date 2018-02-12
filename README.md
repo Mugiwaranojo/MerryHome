@@ -67,3 +67,5 @@ Pour le client react-native, il faut éxécuter la commande `react-native run-an
 
 # [Cours C](https://docs.google.com/presentation/d/1hIUoioWrZuOuvO_0Qe7ryl1Y56559geM77eAcSUi9QY/edit?usp=sharing)
 # [Cours C - partie 2](https://docs.google.com/presentation/d/1obSAh__7_1VAmZ9pIbedwVr82nD1Fl8XHBp2UZVp1qE/edit?usp=sharing)
+# [Cours C - partie 3](https://docs.google.com/presentation/d/1_PM8fv324A7Sj1tRaZR-EZVK4bLO_rB_2KW6NIt6mHk/edit?usp=sharing)
+
