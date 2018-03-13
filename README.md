@@ -71,6 +71,8 @@ Pour le client react-native, il faut éxécuter la commande `react-native run-an
 # [Cours C - partie 4](https://docs.google.com/presentation/d/15HDGUpjgtPMtDnsJUXwtc7hcDcqunEcoi3XP0BtC7Sw/edit?usp=sharing)
 # [Cours C - partie 5](https://docs.google.com/presentation/d/1jjrR_qZOfVigPR8TXztPlYvkj-L3seHb8G4oZRMWnJI/edit?usp=sharing)
 # [Cours C - partie 6](https://docs.google.com/presentation/d/1jtjQOx-rz-3g8zuudEOXWB4xIclgy1qGfmO5CeK9JS0/edit?usp=sharing)
+# [Cours C - Rappelles](https://docs.google.com/presentation/d/1bECeiZ8dgONZdkb9taxY2AmQxwqD5bjeZ9rcEcSw30M/edit?usp=sharing)
+
 # [Cours Réseaux](https://docs.google.com/presentation/d/1w3EfYxGZiErty2UGa1YZT-Q5uQbKrThdEZQonXU7DuU/edit?usp=sharing)
 
 # [Cours HTML](https://docs.google.com/presentation/d/1MRXwiGThiqX4-d5MjkLbDlkXE3it4xl-T-tD7WIYx7A/edit?usp=sharing)
@@ -81,3 +83,5 @@ Pour le client react-native, il faut éxécuter la commande `react-native run-an
 
 
 # [Cours Lecture de code](https://docs.google.com/presentation/d/1LFFZ40EX3KIRIanUiAhd64V1WPZEhC7_9Bp4CffqMNA/edit?usp=sharing)
+
+
