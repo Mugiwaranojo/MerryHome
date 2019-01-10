@@ -63,32 +63,3 @@ Pour le client react-native, il faut éxécuter la commande `react-native run-an
 
 # Architecture Client
 <img src="https://github.com/Mugiwaranojo/MerryHome/blob/master/ArchitectureClient.png">
-
-
-# [Cours C](https://docs.google.com/presentation/d/1hIUoioWrZuOuvO_0Qe7ryl1Y56559geM77eAcSUi9QY/edit?usp=sharing)
-# [Cours C - partie 2](https://docs.google.com/presentation/d/1obSAh__7_1VAmZ9pIbedwVr82nD1Fl8XHBp2UZVp1qE/edit?usp=sharing)
-# [Cours C - partie 3](https://docs.google.com/presentation/d/1_PM8fv324A7Sj1tRaZR-EZVK4bLO_rB_2KW6NIt6mHk/edit?usp=sharing)
-# [Cours C - partie 4](https://docs.google.com/presentation/d/15HDGUpjgtPMtDnsJUXwtc7hcDcqunEcoi3XP0BtC7Sw/edit?usp=sharing)
-# [Cours C - partie 5](https://docs.google.com/presentation/d/1jjrR_qZOfVigPR8TXztPlYvkj-L3seHb8G4oZRMWnJI/edit?usp=sharing)
-# [Cours C - partie 6](https://docs.google.com/presentation/d/1jtjQOx-rz-3g8zuudEOXWB4xIclgy1qGfmO5CeK9JS0/edit?usp=sharing)
-# [Cours C - Rappelles](https://docs.google.com/presentation/d/1bECeiZ8dgONZdkb9taxY2AmQxwqD5bjeZ9rcEcSw30M/edit?usp=sharing)
-
-# [Cours Réseaux](https://docs.google.com/presentation/d/1w3EfYxGZiErty2UGa1YZT-Q5uQbKrThdEZQonXU7DuU/edit?usp=sharing)
-# [Cours Unix](https://docs.google.com/presentation/d/1myXXwQeJfyHqPZde4sbanFwSMm5IE8fLpk0bF8dQaqE/edit?usp=sharing)
-
-# [Cours HTML](https://docs.google.com/presentation/d/1MRXwiGThiqX4-d5MjkLbDlkXE3it4xl-T-tD7WIYx7A/edit?usp=sharing)
-# [Cours PHP](https://docs.google.com/presentation/d/15jvW4AdyQ8p4CR-K1xuyyy8d4O9-ev7H7c4PhJdgu14/edit?usp=sharing)
-
-# [Commandes Github](https://docs.google.com/presentation/d/1MShds7FmchVhrbRrQyr8-wHaW5F0jMLqEm7INGFKaT4/edit?usp=sharing)
-
-
-# [Cours C#](https://docs.google.com/presentation/d/1AdrpegPVPrPgGylaUS-YAzc1oBSnTUcUWQ5xxzxAsao/edit?usp=sharing)
-# [Cours Android](https://docs.google.com/presentation/d/1ddAIVg1oIBg_U0HoD8iFSjdFmr80-aaGq15C0kNSKis/edit?usp=sharing)
-# [Cours Habillage web](https://docs.google.com/presentation/d/1UhcqYLDWSq8IppmJd2nEY2vcav-28WFdyl-RqBMq33U/edit?usp=sharing)
-
-
-
-
-# [Cours Lecture de code](https://docs.google.com/presentation/d/1LFFZ40EX3KIRIanUiAhd64V1WPZEhC7_9Bp4CffqMNA/edit?usp=sharing)
-
-
