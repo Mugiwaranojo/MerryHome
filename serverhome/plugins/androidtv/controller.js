@@ -43,6 +43,11 @@ class AndroidTVController {
                     androidtv.sendCommand("VOLUME_MUTE");
                     res.end(JSON.stringify({resultText: "ok"}));
                     break;
+                case "sendKey":
+                    console.log("androidtv sendKey "+req.body.data);
+                    androidtv.sendCommand(req.body.data);
+                    res.end(JSON.stringify({resultText: "ok"}));
+                    break;
                 default:
                         res.end(JSON.stringify({}));
                     break;

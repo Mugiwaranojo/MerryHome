@@ -4,7 +4,7 @@ class CamerasController {
         
     constructor(io){
         plugincamera.setIO(io);
-        plugincamera.init();
+        //plugincamera.init();
         io.sockets.on('connection', function(socket){ 
             for(var i in plugincamera.cameras){
                 var camera= plugincamera.cameras[i];
