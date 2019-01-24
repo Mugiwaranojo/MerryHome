@@ -1,9 +1,42 @@
 const request = require('sync-request');
+const rp = require('request-promise');
+const $ = require('cheerio');
+const url = 'https://fr.wikipedia.org/wiki/';
+
 
 class WikipediaController {
     
     constructor(io){
-            this.io = io;
+        this.io = io;
+        io.sockets.on('connection', function(socket){ 
+            socket.on('wikipediasearch', function(searchvalue){
+                console.log("wikipediasearch "+searchvalue);
+                var isTable=true;
+                rp(url+searchvalue)
+                .then(function(html) {
+                    var title= $('.firstHeading', html).text();
+                    var infos = $('.infobox_v2', html).html();
+                    if(!infos){
+                        infos= $('.infobox_v3', html).html();
+                        if(!infos){
+                            infos=$('.mw-parser-output', html).html();
+                            isTable= false;
+                        }
+                    }
+                    socket.emit('wikipediaresult', {title: title, infos: infos, isTable: isTable});
+                })
+                .catch(function(err) {
+                  //handle error
+                }); 
+            });
+        });
+    }
+    
+    getView(req, res){
+        var dataView = { 
+            "type" : "Wikipedia"
+        };
+        res.end(JSON.stringify(dataView));
     }
     
     postAction(req, res){

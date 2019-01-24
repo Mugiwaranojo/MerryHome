@@ -1,0 +1,30 @@
+.plugin-wikipedia .result{
+    margin: 20px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.plugin-wikipedia .result table > p, .plugin-wikipedia .result table > div {
+    display: block;
+}
+
+.plugin-wikipedia .shortResult{
+    margin: 10px 80px;
+    display: inline-block;
+    text-align: left;
+}
+
+.plugin-wikipedia .shortResult::before {
+    content: open-quote;
+}
+.plugin-wikipedia .shortResult::after {
+    content: close-quote;
+}
+
+
+.thumb.tright {
+    float: right;
+    clear: right;
+    width: auto;
+}
