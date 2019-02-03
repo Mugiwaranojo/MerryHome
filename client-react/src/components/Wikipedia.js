@@ -44,13 +44,13 @@ class Wikipedia extends React.Component {
         var self= this;
         subscribeToEvent("wikipediaresult", function(data){
             self.setState({
-                searchResult: data.infos.replace(new RegExp("\/wiki\/", 'g'), "/plugin/wikipedia/"),
+                searchResult: data.infos.replace(new RegExp("/wiki/", 'g'), "/plugin/wikipedia/"),
                 isTable: data.isTable
             });
         });
         var lastPart = window.location.href.split("/").pop();
         if(lastPart !== "wikipedia"){
-            this.state.searchValue= lastPart;
+            this.setState({searchValue: lastPart});
             this.handleSubmit(null);
         }
     }
