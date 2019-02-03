@@ -4,6 +4,7 @@ class AndroidTVController {
         
         constructor(io){
             this.io = io;
+            this.isactive=true;
         }
         
         getView(req, res){

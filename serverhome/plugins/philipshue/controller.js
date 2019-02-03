@@ -4,7 +4,7 @@ class HueController {
 	
         constructor(io){
             this.io = io;
-            
+            this.isactive=true;
         }
         
         getView(req, res){

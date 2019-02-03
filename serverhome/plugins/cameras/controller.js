@@ -4,19 +4,21 @@ class CamerasController {
         
     constructor(io){
         plugincamera.setIO(io);
+        this.isactive=false;
         //plugincamera.init();
-        io.sockets.on('connection', function(socket){ 
-            for(var i in plugincamera.cameras){
-                var camera= plugincamera.cameras[i];
-                socket.on(camera.name+'.start', function(name){
-                    plugincamera.startByName(name);
-                });
-                socket.on(camera.name+'.stop', function(name){
-                    plugincamera.stopByName(name);
-                });
-            }
-        });
-
+        if(this.isactive){
+            io.sockets.on('connection', function(socket){ 
+                for(var i in plugincamera.cameras){
+                    var camera= plugincamera.cameras[i];
+                    socket.on(camera.name+'.start', function(name){
+                        plugincamera.startByName(name);
+                    });
+                    socket.on(camera.name+'.stop', function(name){
+                        plugincamera.stopByName(name);
+                    });
+                }
+            });
+        }
     }
 
     getView(req, res){

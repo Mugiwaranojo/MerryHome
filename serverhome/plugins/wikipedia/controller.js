@@ -8,28 +8,31 @@ class WikipediaController {
     
     constructor(io){
         this.io = io;
-        io.sockets.on('connection', function(socket){ 
-            socket.on('wikipediasearch', function(searchvalue){
-                console.log("wikipediasearch "+searchvalue);
-                var isTable=true;
-                rp(url+searchvalue)
-                .then(function(html) {
-                    var title= $('.firstHeading', html).text();
-                    var infos = $('.infobox_v2', html).html();
-                    if(!infos){
-                        infos= $('.infobox_v3', html).html();
+        this.isactive=true;
+        if(this.isactive){
+            io.sockets.on('connection', function(socket){ 
+                socket.on('wikipediasearch', function(searchvalue){
+                    console.log("wikipediasearch "+searchvalue);
+                    var isTable=true;
+                    rp(url+searchvalue)
+                    .then(function(html) {
+                        var title= $('.firstHeading', html).text();
+                        var infos = $('.infobox_v2', html).html();
                         if(!infos){
-                            infos=$('.mw-parser-output', html).html();
-                            isTable= false;
+                            infos= $('.infobox_v3', html).html();
+                            if(!infos){
+                                infos=$('.mw-parser-output', html).html();
+                                isTable= false;
+                            }
                         }
-                    }
-                    socket.emit('wikipediaresult', {title: title, infos: infos, isTable: isTable});
-                })
-                .catch(function(err) {
-                  //handle error
-                }); 
+                        socket.emit('wikipediaresult', {title: title, infos: infos, isTable: isTable});
+                    })
+                    .catch(function(err) {
+                      //handle error
+                    }); 
+                });
             });
-        });
+        }
     }
     
     getView(req, res){

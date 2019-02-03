@@ -16,15 +16,17 @@ module.exports = function(app, io) {
                 //if controller exists add plugin controller url
                 var path = pluginsFolder+"/"+file+"/controller.js";
                 if (fs.existsSync(path)) {
-                    plugins.push(file);
-                    console.log("setting plugin "+file);
                     var classPluginController= require(path);
                     var tmpPluginController = new classPluginController(io);
-                    app.post('/api/'+file+'/action/:actionId', tmpPluginController.postAction);
-                    //if view exists add plugin view url
-                    if(tmpPluginController.getView){
-                        app.get('/api/'+file+'/view', tmpPluginController.getView);
-                        pluginsForMenu.push(file);
+                    if(tmpPluginController.isactive){
+                        console.log("setting plugin "+file);
+                        plugins.push(file);
+                        app.post('/api/'+file+'/action/:actionId', tmpPluginController.postAction);
+                        //if view exists add plugin view url
+                        if(tmpPluginController.getView){
+                            app.get('/api/'+file+'/view', tmpPluginController.getView);
+                            pluginsForMenu.push(file);
+                        }
                     }
                 }
             });
