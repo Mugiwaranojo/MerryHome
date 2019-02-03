@@ -1,6 +1,6 @@
 {
     "changeChanel": "mets la chaîne (?P<channelValue>.+)",
-    "volumeUp": "monte le son",
-    "volumeDown": "baisse le son",
-    "volumeMute": "coupe le son"
+    "volumeUp": "monte le son de la boxe",
+    "volumeDown": "baisse le son de la boxe",
+    "volumeMute": "coupe le son de la boxe"
 }

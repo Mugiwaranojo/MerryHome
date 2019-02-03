@@ -1,0 +1,7 @@
+{	
+    "increaseSound" : "monte le son",
+    "decreaseSound" : "baisse le son",
+    "muteSound"     : "coupe le son",
+    "muteOffSound"  : "remets le son",
+    "setVolumeSound": "mets le volume sur (?P<value>[0-9]+)"
+}
