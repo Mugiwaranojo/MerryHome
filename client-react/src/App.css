@@ -21,6 +21,10 @@
   color: white;
 }
 
+.voicerecognition{
+    margin-bottom: 15px;
+}
+
 .voice-icon{
     font-size: 50px;
     display: block;

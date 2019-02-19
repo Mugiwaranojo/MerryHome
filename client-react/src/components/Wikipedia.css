@@ -28,3 +28,9 @@
     clear: right;
     width: auto;
 }
+
+
+.plugin-wikipedia .voicerecognition{
+    display: inline-block;
+    margin-left: 10px;
+}

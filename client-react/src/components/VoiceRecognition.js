@@ -32,9 +32,12 @@ class VoiceRecognition extends Component {
                     var result=event.results[event.results.length-1];
                     if(result.isFinal){
                         var objRequest = searchRequest(result[0].transcript, expressions);
-                        console.log({"transcript": result[0].transcript,
-                                     "data": objRequest});
-                        if(objRequest && objRequest.plugin){
+                            console.log({"transcript": result[0].transcript,
+                                         "data": objRequest});
+                        //si un callback est definit on transmet l'information par la fonction.    
+                        if(self.props.callback){
+                            self.props.callback(objRequest);
+                        }else if(objRequest && objRequest.plugin){
                             self.sendData(objRequest);
                         }
                     }
@@ -76,7 +79,7 @@ class VoiceRecognition extends Component {
         }
 
         return (
-            <div>
+            <div className="voicerecognition">
                <Glyphicon glyph="comment" className={"voice-icon "+(this.props.listening  ? "listening" : "")} />
                { this.props.listening  ? 
                 <Button bsStyle="danger" onClick={stopListening}><Glyphicon glyph="stop" /> stop </Button> : 

@@ -1,4 +1,5 @@
 import React from 'react'
+import VoiceRecognition from './VoiceRecognition'
 import { Form, FormGroup,FormControl, ControlLabel, Button, Glyphicon } from 'react-bootstrap'
 import {subscribeToEvent, emitEvent, sendRequest} from '../utils/serverhome-api'
 import './Wikipedia.css';
@@ -13,6 +14,7 @@ class Wikipedia extends React.Component {
                        searchResult: null };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.callbackVoice= this.callbackVoice.bind(this);
     }
     
     handleChange (event) {
@@ -55,6 +57,14 @@ class Wikipedia extends React.Component {
         }
     }
     
+    callbackVoice(voiceInfo){
+        console.log(voiceInfo);
+        if(voiceInfo.data.searchValue){
+            this.setState({searchValue: voiceInfo.data.searchValue});
+            this.handleSubmit();
+        }
+    }
+    
     render() {
         var result = this.state.searchResult ? 
                         (this.state.isTable ?
@@ -64,11 +74,13 @@ class Wikipedia extends React.Component {
         return (
             <div className='plugincontent plugin-wikipedia'>
                 <Form onSubmit={this.handleSubmit} inline>
+                    
                     <FormGroup controlId="formInlineName">
                         <ControlLabel>Search</ControlLabel>{' '}
                         <FormControl type="text" placeholder="terms" value={this.state.searchValue} onChange={this.handleChange} />
                     </FormGroup>{' '}
                     <Button type="submit"><Glyphicon glyph="search" /> </Button>
+                    <VoiceRecognition callback={this.callbackVoice}/>
                 </Form>
                 <div className="shortResult">
                     <cite>{this.state.shortResult}</cite>
